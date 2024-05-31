@@ -1,0 +1,266 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  flex-shrink: 0;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding-bottom: 100px;
+  padding: 10px 0px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.navbar-title {
+  display: block;
+  color: #000; /* Ajusta el color del título */
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #cce7ff !important;
+}
+
+.results-section {
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+table th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+table th,
+table td {
+  text-align: center;
+  font-size: 0.78rem; /* Reduce el tamaño de la fuente */
+  border: 30px solid black; /* Añade borde negro a todas las celdas */
+}
+
+.search-section h2,
+.results-section h2 {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.form-check {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 55px;
+  margin-bottom: 10px;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.search-section .card-body,
+.search-section .form-group,
+.search-section .btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#options {
+  margin-top: 15px;
+}
+
+.results-section .btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.results-section .btn {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.table-wrapper {
+  width: 100%;
+}
+
+.table-wrapper table {
+  width: 100%;
+}
+
+@media (max-width: 1025px) {
+  .results-section .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .results-section .btn {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+  }
+
+  .results-section table {
+    width: 100%;
+  }
+
+  .table-responsive {
+    overflow-x: hidden;
+  }
+
+  .results-section table th,
+  .results-section table td {
+    font-size: 0.8rem; /* Reduce aún más el tamaño de la fuente en pantallas pequeñas */
+  }
+
+  .form-check {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .form-check-input {
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .navbar-brand {
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 15px;
+  }
+
+  .navbar-brand span {
+    display: none;
+  }
+
+  .navbar-brand img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .results-section h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem; /* Reduce el tamaño del título de la tabla en pantallas pequeñas */
+  }
+
+  #results-table {
+    display: block;
+  }
+
+  #results-table thead {
+    display: none;
+  }
+
+  #results-table tbody,
+  #results-table tr,
+  #results-table td {
+    display: block;
+    width: 100%;
+  }
+
+  #results-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    padding: 8px; /* Reduce el padding vertical */
+  }
+
+  #results-table td {
+    text-align: left;
+    padding: 30px 11px; /* Reduce el tamaño vertical de las celdas */
+    position: relative;
+  }
+
+  #results-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+}
+
+.text-center p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+@media print {
+  .print-logo-container img {
+    display: block;
+  }
+  .print-btn,
+  .new-query-btn {
+    display: none;
+  }
+  .results-section table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .results-section th,
+  .results-section td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .table-responsive {
+    overflow-x: hidden;
+  }
+}
