@@ -306,7 +306,7 @@ async function printTable() {
 <body>
     <div class="print-header">
         <img src="/vite.svg" alt="Logo" width="50">
-        <h2>Directorio Telefónico UNMSM</h2>
+        <h2>Directorio Telefónico</h2>
     </div>
     <div class="table-title">${tableTitle}</div>
     <div class="table-wrapper">
