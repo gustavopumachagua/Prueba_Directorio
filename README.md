@@ -17,7 +17,7 @@ Aplicación web desarrollada para facilitar la búsqueda y visualización de con
 
 ---
 
-## 📂 Imagen del proyecto
+## 📷 Vista previa
 
 ![Modelo](./img/directorio.png "Modelo")
 
@@ -44,12 +44,6 @@ Crea una versión optimizada para producción en la carpeta `dist/`.
 ### `npm run preview`
 
 Sirve la versión de producción localmente para pruebas finales.
-
----
-
-## 📷 Vista previa
-
-> _(Agrega aquí una captura de pantalla si lo deseas)_
 
 ---
 
